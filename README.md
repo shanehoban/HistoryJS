@@ -10,17 +10,18 @@ This is a work in progress and is not near complete. There is more configurating
 Here's how you set it up in terms of your HTML:
 
     <div data-history-js-container="main-content">
-        <a data-history-js-link="views/view1.php?test=tester12345">View 1</a>
-        <a data-history-js-link="views/view2.php" data-history-js-skip-history="true">View 2</a>
-        <a data-history-js-link="views/view3.php">View 3</a>
-        <a data-history-js-link="views/view4.php">View 4</a>
-      </div>
+       <a data-history-js-link="views/view1.php?test=tester12345">View 1</a>
+       
+       <!-- This link skips saving to history -->
+       <a data-history-js-link="views/view2.php" data-history-js-skip-history="true">View 2</a> 
+       <a data-history-js-link="views/view3.php">View 3</a>
+       <a data-history-js-link="views/view4.php">View 4</a>
+    </div>
     
-      <div class="loner-menu">
-        <a data-history-js-link="views/view5.php" data-history-js-container="main-content">View 5</a>
-  	  </div>
-
-      <div class="jumbotron" data-history-js-content="main-content"></div>
+    <!-- This link is a loner, but works in the same container -->
+    <a data-history-js-link="views/view5.php" data-history-js-container="main-content">View 5</a>
+  
+    <div class="jumbotron" data-history-js-content="main-content"></div>
       
 The `data-history-js-container="main-content"` links anchor tags to the container you wish to load you HTML in. I would recommend only using one container for the moment as the history is not being stored multi-dimensionally (although the reading of user interaction is).
 
