@@ -29,6 +29,7 @@ The `data-history-js-container="main-content"` links anchor tags to the containe
 
 The HTML is loaded then in the referring `data-history-js-content="main-content"` element.
       
+> I would recommend using `a { cursor: pointer; }` CSS for anchor tags that have no href attribute.
 ----------
 
 ### JS Configuration
