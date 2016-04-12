@@ -28,8 +28,10 @@ The `data-history-js-container="main-content"` links anchor tags to the containe
 > Yes, you can also singularly mark anchor tags instead of having them nested like so `<a data-history-js-link="views/view5.php" data-history-js-container="main-content">View 5</a>`
 
 The HTML is loaded then in the referring `data-history-js-content="main-content"` element.
-      
+
+
 > I would recommend using `a { cursor: pointer; }` CSS for anchor tags that have no href attribute.
+
 ----------
 
 ### JS Configuration
